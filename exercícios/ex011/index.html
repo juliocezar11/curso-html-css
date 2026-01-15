@@ -8,11 +8,20 @@
 <body>
     <h1>Imagens dinâmicas</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamando do seu navegador</p>
-
     <picture>
         <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Jah Jah Bangs - Quincas Moreira.mp3" controls autoplay></audio>
+    <p>Áudio usando source</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Jah Jah Bangs - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midia/Jah Jah Bangs - Quincas Moreira.mp3" type="audio/ogg">
+        <source src="midia/Jah Jah Bangs - Quincas Moreira.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/Jah Jah Bangs - Quincas Moreira.mp3"></a></p>
+    </audio>
 </body>
 </html>
